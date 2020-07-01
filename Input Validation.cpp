@@ -9,7 +9,7 @@ unsigned int GetCargoNum(){
   cout<<"is there any Cargo? (1 for yes or 0 for no)\n";
   cin>>setw(1)>>res;
   
-  while(!cin.good()||res>1){
+  while(!cin.good()||res>1||res<0){
   	cin.clear();
   	cin.ignore(1000, '\n');
   	
